@@ -7,7 +7,7 @@ Publication preparation: 26 October 2026.
 - Python 3.12, existing local virtual environment, exact versions in `requirements.lock.txt`.
 - `python -m pytest -q`: **16 passed**, one upstream Starlette deprecation warning about its HTTPX test transport.
 - Tests use temporary SQLite databases; recommendation constraints, fallback preference extraction, ticket lifecycle, persistence and reminder behavior are covered.
-- A GitHub Actions workflow is supplied for Python 3.12. Remote CI has not yet been run; a fresh network installation has not been verified in this pass.
+- [GitHub Actions run 40368839378](https://github.com/Timuridzone/aurea-jewelry-assistant/actions/runs/40368839378) passed on a fresh Ubuntu runner with Python 3.12, including installation from `requirements.lock.txt`, the publication audit and the test suite.
 - `python scripts/audit_publication.py` checks the tracked publication files for common credential patterns, local home paths and accidentally included runtime data. It is a focused heuristic check, not a guarantee that all secrets or security defects have been detected.
 
 ## Manual browser checks
@@ -29,3 +29,7 @@ The existing automated tests additionally check that customer responses do not e
 Only application source, tests, placeholder environment documentation, dependency files, reference schema, launcher, documentation, audit script, workflow and six fresh fictional screenshots are selected. Existing databases, database sidecars, virtual environments, caches, the older unverified screenshot and unrelated project/reference files are excluded. A new Git history avoids copying any prior local data or credentials.
 
 The author approved public publication and the MIT License on 26 October 2026.
+
+## Published repository
+
+[Timuridzone/aurea-jewelry-assistant](https://github.com/Timuridzone/aurea-jewelry-assistant) is public. GitHub reports the MIT license, and the remote tree contains the README, license and all six gallery images.

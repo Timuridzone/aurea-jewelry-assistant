@@ -29,7 +29,8 @@ Actual browser captures of this application using a fresh fictional database. No
 Use Python 3.12 for the reproduced setup (verified locally). The code targets Python 3.11+; other versions have not been verified in this publication pass. No Node build, paid services or API key needed.
 
 ```sh
-# Run from the repository root
+git clone https://github.com/Timuridzone/aurea-jewelry-assistant.git
+cd aurea-jewelry-assistant
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.lock.txt
@@ -168,6 +169,8 @@ These routes have no authentication and are intended for localhost only.
 source .venv/bin/activate
 python -m pytest -q
 ```
+
+Verified: **16 tests pass locally**, and [the first GitHub Actions run](https://github.com/Timuridzone/aurea-jewelry-assistant/actions/runs/40368839378) passed on a fresh Python 3.12 Ubuntu runner.
 
 Tests use temporary SQLite databases, isolated from the demo data. Coverage includes hard recommendation constraints and ranking, Spanish budget parsing, multi-turn preferences, empty/unavailable matches, grounded responses, unknown-policy/order escalation, optional model validation/fallback, human takeover, complete ticket lifecycle, staff notes, searching, invalid transitions, restart persistence, English chat, reminder thresholds, duplicate suppression, owner routing, pause/restart cycles, closed hours, weekends, the October daylight-saving boundary, and settings validation.
 
