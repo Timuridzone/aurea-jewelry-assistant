@@ -192,7 +192,7 @@ requirements.lock.txt    Exact dependencies from the tested local environment
 requirements.txt         Top-level dependency ranges
 .env.example             Placeholder configuration; not loaded automatically
 run.sh                   Localhost launcher for an existing .venv
-scripts/                 Allowlist-based publication audit
+scripts/                 Tracked-file publication audit
 .github/workflows/       Test workflow configuration
 docs/                   Portfolio gallery and verification evidence
 ```
@@ -201,4 +201,4 @@ Local databases, virtual environments, caches and secrets are excluded from vers
 
 ## License
 
-No project license has been selected or granted. A license will only be added after the author's approval. Dependencies retain their respective licenses. Public visibility alone should not be treated as an open-source license.
+Licensed under the [MIT License](LICENSE). Dependencies retain their respective licenses.

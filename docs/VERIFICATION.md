@@ -28,4 +28,4 @@ The existing automated tests additionally check that customer responses do not e
 
 Only application source, tests, placeholder environment documentation, dependency files, reference schema, launcher, documentation, audit script, workflow and six fresh fictional screenshots are selected. Existing databases, database sidecars, virtual environments, caches, the older unverified screenshot and unrelated project/reference files are excluded. A new Git history avoids copying any prior local data or credentials.
 
-No project license has been added pending the author's decision.
+The author approved public publication and the MIT License on 26 October 2026.
